@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - Generate Password 
+ * main - Generate Password by random values
  * @void: void parameter
  * Return: Always (Success)
  */
