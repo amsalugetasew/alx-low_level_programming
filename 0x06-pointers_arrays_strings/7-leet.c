@@ -1,18 +1,26 @@
-#include<string.h>
-#include<stdio.h>
-char *leet(char * str)
+#include "main.h"
+
+/**
+ * *leet - Prints rotated 13 strings
+ * @s: first character  parameter
+ * Return: Always (Success)
+ */
+
+char *leet(char *s)
 {
-int i,len=strlen(str);
-for(i = 0; i < len;i++)
-{
-    
-    if(*(str+i)==65 || *(str+i)==97){
-        *(str+i)=108;
-    }
-    else{   
-    *(str+i)-=0;
-    }
-    
-    }
-return (str);
+	int i, j;
+	char ch1[] = "aAeEoOtTlL";
+	char ch2[] = "4433007711";
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; j < 10; j++)
+		{
+			if (s[i] == ch1[j])
+			{
+				s[i] = ch2[j];
+			}
+		}
+	}
+	return (s);
 }
