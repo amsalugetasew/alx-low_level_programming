@@ -1,4 +1,4 @@
-i#include<stdio.h>
+#include<stdio.h>
 
 /**
  * reverse_array - Prints reverses the content of an array of integers
