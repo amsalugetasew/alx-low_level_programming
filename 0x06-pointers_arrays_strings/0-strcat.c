@@ -3,7 +3,7 @@
 /**
  * *_strcat - Prints the concatinated value of two strings 
  * @dest: first character string parameter
- * @src: secondcharacter string parameter
+ * @src: second character string parameter
  * Return: Always (Success)
  */
 
