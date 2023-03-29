@@ -1,7 +1,7 @@
-#include<stdio.h>
+i#include<stdio.h>
 
 /**
- * *_strncat - Prints reverses the content of an array of integers
+ * reverse_array - Prints reverses the content of an array of integers
  * @a: first integer  parameter
  * @n: second integer parameter
  * Return: Always (Success)
