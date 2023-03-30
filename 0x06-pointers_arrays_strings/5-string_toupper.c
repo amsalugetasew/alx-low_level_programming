@@ -2,7 +2,7 @@
 
 /**
  * *string_toupper - changes all lowercase letters of a string to uppercase
- * @srr: character string parameter
+ * @str: character string parameter
  * Return: Always (Success)
  */
 
