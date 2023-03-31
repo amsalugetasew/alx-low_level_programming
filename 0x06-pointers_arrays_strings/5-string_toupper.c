@@ -1,11 +1,9 @@
 #include<string.h>
-
 /**
  * *string_toupper - changes all lowercase letters of a string to uppercase
  * @str: character string parameter
  * Return: Always (Success)
  */
-
 char *string_toupper(char * str)
 {
 	int i, len = strlen(str);
