@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * *infinite_add - Prints the sum of a number
  * @n1: - first character parameter
@@ -7,7 +6,6 @@
  * @r: - third character parameter
  * @size_r: - first integer parameter
  * Return: Always (Success)
- *
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
