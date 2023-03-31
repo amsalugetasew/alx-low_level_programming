@@ -4,7 +4,7 @@
  * @str: character string parameter
  * Return: Always (Success)
  */
-char *string_toupper(char * str)
+char *string_toupper(char *str)
 {
 	int i, len = strlen(str);
 
