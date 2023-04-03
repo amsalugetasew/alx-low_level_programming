@@ -1,7 +1,7 @@
 #include <string.h>
 
 /**
- * *_strspn - Prints a copies of memory area
+ * _strspn - Prints a copies of memory area
  * @s: first charcter string parameter
  * @accept: second character string parameter
  * Return: Always (Success)
