@@ -1,4 +1,5 @@
 #include<string.h>
+
 /**
  * *_memset - Prints a pointer of memory area
  * @s: first charcter string parameter
@@ -9,12 +10,7 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	s = memset(s, b, n);
 
-	for (i = 0; i < n; i++)
-	{
-		s = &b;
-		s = memset(s + 13, '.', 8*sizeof(char));
-	}
 	return (s);
 }
