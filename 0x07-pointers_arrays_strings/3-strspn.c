@@ -9,8 +9,23 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int len;
-	len = strspn(s, accept);
+	unsigned i, j, len = 0, inc;
 
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		inc = 0;
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				len++;
+				inc++;
+			}
+		}
+		if (inc == 0)
+		{
+			break;
+		}
+	}
 	return (len);
 }
