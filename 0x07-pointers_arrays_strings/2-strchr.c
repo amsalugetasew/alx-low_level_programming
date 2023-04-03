@@ -1,28 +1,14 @@
-#include<string.h>
-#include<stdio.h>
+#include <string.h>
+/**
+ * *_strchr - Prints string after the scanned character
+ * @s: first charcter string parameter
+ * @c: second character string parameter
+ * Return: Always (Success)
+ */
+
 char *_strchr(char *s, char c)
 {
-/*int i, j;
-int len=strlen(s);
-char *ss=NULL;
-for(i = 0; i < len; i++)
-{
+	s = strchr(s, c);
 
-if(*(s+i)==c)
-{
-j = i;
-while(j < len)
-{
-printf("%c",s[j]);
-ss+=s[j];
-j++;
-}
-break;
-}
-}
-*/
-
- s = strchr(s, c);
-
-return (s);
+	return (s);
 }
