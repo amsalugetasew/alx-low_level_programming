@@ -9,8 +9,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int num_of_match;
-	num_of_match = strspn(s, accept);
+	unsigned int len;
+	len = strspn(s, accept);
 
-	return (num_of_match);
+	return (len);
 }
