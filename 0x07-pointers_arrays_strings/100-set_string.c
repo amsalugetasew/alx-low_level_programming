@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * print_to_98 - Prints all numbers
- * @n: - first integer parameter
+ * set_string - Prints string using pointer to pointer
+ * @s: - first character parameter
+ * @to: - second character parameter
  * Return: Always (Success)
  *
  */
