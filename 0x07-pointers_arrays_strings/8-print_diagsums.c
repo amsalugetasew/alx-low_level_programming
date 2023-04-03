@@ -1,6 +1,4 @@
-#include<stdio.h>
-#include "main.h"
-
+#include <stdio.h>
 /**
  * print_diagsums - Prints the sum of the two diagonas with squer array
  * @a: - first integer parameter
@@ -8,42 +6,17 @@
  * Return: Always (Success)
  */
 
-
 void print_diagsums(int *a, int size)
 {
-	int i, j, diagonal[2], num, num1;
-	num = 0;
-	num1 = 0;
+	int i, j, s1 = 0, s2 = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i <= (size * size); i = i + size + 1)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-			{
-				num += *(a + i * size + j);
-			}
-			if (i == (size - 1) - j)
-			{
-				num1 += *(a + i * size + j);
-			}
-		}
+		s1 += a[i];
 	}
-	diagonal[0] = num;
-        diagonal[1] = num1;
-
-	for ( i = 0; i <= 1; i++)
+	for (j = size - 1; j <= (size * size) - size; j = j + size - 1)
 	{
-		if ( i == 0)
-		{
-			printf("%d",(diagonal[i]));
-			putchar(',');
-			putchar(' ');
-		}
-		else
-		{
-			printf("%d",(diagonal[i]));
-		}
+		s2 += a[j];
 	}
-	printf("\n");
+	printf("%d, %d\n", s1, s2);
 }
