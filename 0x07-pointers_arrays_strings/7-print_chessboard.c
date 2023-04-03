@@ -1,7 +1,7 @@
-#include<stdio.h>
 #include "main.h"
+
 /**
- * *print_chessboard - Prints the chessboard
+ * print_chessboard - Prints the chessboard
  * @a: array
  * Return: Always (Success)
  */
