@@ -7,27 +7,27 @@
 
 int is_prime_number(int n)
 {
-	int i, inc = 0;
-	if (n != 1 && n != -1)
-	{
-		for (i = 1; i <= n; i++)
-		{
-			if (n % i == 0)
-			{
-				inc++;
-			}
-		}
-		if (inc > 2)
-		{
-			return (0);
-		}
-		else
-		{
-			return (1);
-		}
-	}
-	else
+	return (prime_check(n, 1));
+}
+/**
+ * prime_check - check a number is prime
+ * @n: firts integer paramenter
+ * @i: input two
+ * Return: Always (Success)
+ */
+int prime_check(int n, int i)
+{
+	if (n <= 1)
 	{
 		return (0);
 	}
+	if (n % i == 0 && i > 1)
+	{
+		return (0);
+	}
+	if ((n / i) < i)
+	{
+		return (1);
+	}
+	return (prime_check(n, i + 1));
 }
