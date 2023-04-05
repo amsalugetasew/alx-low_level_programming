@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _puts_recursion - Prints string using
+ * _print_rev_recursion - Prints revers string using recursion
  * @s: - first character parameter
  * Return: Always (Success)
  */
@@ -11,6 +11,6 @@ void _print_rev_recursion(char *s)
 	{
 		return;
 	}
-	_print_rev_recursion( s + 1);
+	_print_rev_recursion(s + 1);
 	putchar(*s);
 }
