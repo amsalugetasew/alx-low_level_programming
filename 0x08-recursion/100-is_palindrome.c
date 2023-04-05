@@ -27,7 +27,7 @@ int comparision(char *s, int num1, int num2)
 		{
 			return (1);
 		}
-		return (0 + comparision(s, num1 + 1, num2 -1));
+		return (0 + comparision(s, num1 + 1, num2 - 1));
 	}
 	return (0);
 }
