@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * _puts_recursion - Prints string using 
+ * _puts_recursion - Prints string using
  * @s: - first character parameter
  * Return: Always (Success)
  */
