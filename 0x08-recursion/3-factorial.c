@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _print_rev_recursion - Prints revers string using recursion
- * @s: - first character parameter
+ * factorial - Prints factorial of a number using recursion
+ * @n: - first integer parameter
  * Return: Always (Success)
  */
 int factorial(int n)
