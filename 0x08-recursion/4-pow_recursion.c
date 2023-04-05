@@ -4,7 +4,7 @@
 /**
  * _pow_recursion - Prints power of a number recursion
  * @x: firts integer paramenter
- * @s: - first integer parameter
+ * @y: - first integer parameter
  * Return: Always (Success)
  */
 int _pow_recursion(int x, int y)
@@ -17,7 +17,7 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	else 
+	else
 	{
 		return (x * _pow_recursion(x, y - 1));
 	}
