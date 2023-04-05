@@ -12,3 +12,5 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int prime_check(int n, int i);
 int square_root(int n, int i);
+int comp_len_os_string(char *s);
+int comparision(char *s, int num1, int num2);
