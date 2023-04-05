@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * is_prime_number - Prints prime number recursion
- * @n: firts integer paramenter 
+ * @n: firts integer paramenter
  * Return: Always (Success)
  */
 
