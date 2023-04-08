@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - Prints the minimum number of coins
  * @argc: firts input
  * @argv: second input
  * Return: Always (Success)
  */
-
 int main(int argc, char *argv[])
 {
 	int cnt, num_of_min_coins = 0;
@@ -16,7 +14,7 @@ int main(int argc, char *argv[])
 	{
 		cnt = atoi(argv[1]);
 
-		while( cnt > 0)
+		while (cnt > 0)
 		{
 			num_of_min_coins++;
 			if ((cnt - 25) >= 0)
