@@ -18,13 +18,13 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			add += strtol (argv[i], &next, 10);
+			add += strtol(argv[i], &next, 10);
 			if ((next == argv[i]) || (*next != '\0'))
 			{
 				counter++;
 			}
 		}
-		if(counter == 0)
+		if (counter == 0)
 		{
 			printf("%d\n", add);
 		}
