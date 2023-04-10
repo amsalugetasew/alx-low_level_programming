@@ -3,9 +3,9 @@
 #include <string.h>
 
 /**
- * *str_concat - Alocate memory to the the concatinated string and print it
- * @s1: first input
- * @s2: second input
+ * **alloc_grid - Alocate memory to the the concatinated string and print it
+ * @width: first input
+ * @height: second input
  * Return: Always (Success)
  */
 int **alloc_grid(int width, int height)
