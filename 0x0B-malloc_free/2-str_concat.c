@@ -21,9 +21,9 @@ char *str_concat(char *s1, char *s2)
 			cat[i] = s1[i];
 		}
 		for (i = 0; i < len2; i++)
-                {
-                        cat[i + len1] = s2[i];
-                }
+		{
+			cat[i + len1] = s2[i];
+		}
 		return (cat);
 	}
 	else
