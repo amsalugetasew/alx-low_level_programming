@@ -16,26 +16,30 @@ dog_t *new_dog(char *name, float age, char *owner)
 		nl = lenth_of_string(name) + 1;
 		ol = lenth_of_string(owner) + 1;
 		maxd = malloc(sizeof(dog_t));
+
 		if (maxd == NULL)
 		{
 			return (NULL);
 		}
 		maxd->name = malloc(sizeof(char) * nl);
+
 		if (maxd->name == NULL)
 		{
 			free(maxd);
 			return (NULL);
 		}
 		maxd->owner = malloc(sizeof(char) * ol);
+
 		if (maxd->owner == NULL)
 		{
 			free(maxd->name);
 			free(maxd);
-			return(NULL);
+			return (NULL);
 		}
 		maxd->name = copy_string(maxd->name, name);
 		maxd->owner = copy_string(maxd->owner, owner);
 		maxd->age = age;
+
 	}
 	return (maxd);
 }
