@@ -10,6 +10,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *maxd;
 	int nl = 0, ol = 0;
+
 	if (name != NULL && owner != NULL)
 	{
 		nl = lenth_of_string(name) + 1;
@@ -45,6 +46,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 int lenth_of_string(char *s)
 {
 	int i = 0;
+
 	for (; *s != '\0'; s++)
 	{
 		i++;
