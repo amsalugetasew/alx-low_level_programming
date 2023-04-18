@@ -3,7 +3,7 @@
  * @name: First member
  * @age: Second member
  * @owner: Third member
- * Description: declartaion of new dog structure with three members of character float and character repectively
+ * Description: declartaion of new dog structure with three members
  */
 struct dog
 {
