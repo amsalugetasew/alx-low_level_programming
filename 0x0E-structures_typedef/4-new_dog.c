@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * new_dog - initialization of the function
+ * *new_dog - initialization of the function
  * @name: second parameter
  * @age: thrirs parameter
  * @owner: fourth parameter
@@ -58,7 +58,7 @@ int lenth_of_string(char *s)
 	return (i);
 }
 /**
- * copy_string - copy a string of one variable to the other
+ * *copy_string - copy a string of one variable to the other
  * @d: first parameter
  * @s: second parameter
  */
