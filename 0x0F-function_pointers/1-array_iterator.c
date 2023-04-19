@@ -1,3 +1,4 @@
+#include <stddef.h>
 /**
  * array_iterator - Print arrray element in decimal and hexa decimal
  * @array: first parameter
