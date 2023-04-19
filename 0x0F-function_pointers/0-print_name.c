@@ -1,7 +1,7 @@
 /**
  * print_name - Print name of person as it is and in uperletter
  * @name: first parameter
- * f: function as parameter
+ * @f: function as parameter
  * Return: Always (Sucess).
  */
 
