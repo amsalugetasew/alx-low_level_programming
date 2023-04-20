@@ -3,7 +3,7 @@
 /**
  * sum_them_all - Compute and returns the sum of all its parameters
  * @n: first parameter
- * 
+ * @...: Unknown arg
  * Return: Always (Sucess).
  */
 int sum_them_all(const unsigned int n, ...)
