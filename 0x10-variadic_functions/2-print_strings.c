@@ -5,13 +5,12 @@
  * print_strings - Print strings, followed by a new line
  * @separator: first input
  * @n: second input
- * 
+ * @...: Unkwon arguments
  * Return: Always (Sucess).
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-
 	va_list list_arg;
 	va_start(list_arg, n);
 
@@ -21,14 +20,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("(nil)");
 		}
-		else if (i == n - 1)
+		else
 		{
 			printf("%s", va_arg(list_arg, char *));
 		}
-		else
+		if (i != (n - 1) && separator != NULL)
 		{
-			printf("%s, ", va_arg(list_arg, char *));
+			printf("%s", separator);
 		}
 	}
 	printf("\n");
+	va_end(list_arg);
 }
