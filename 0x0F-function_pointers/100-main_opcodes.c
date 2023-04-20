@@ -2,14 +2,14 @@
 #include <stdlib.h>
 /**
  * main - check the code
- * @aergc: first parm
+ * @argc: first parm
  * @argv: second parm
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
 	int byt, i;
-	int (*address)(int,char **) = main;
+	int (*address)(int, char **) = main;
 	unsigned char oc;
 
 	if (argc != 2)
