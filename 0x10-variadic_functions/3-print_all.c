@@ -13,7 +13,8 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0;
-	char *s, *separator = " ";
+	char *s, *separator = "";
+
 	va_start(args, format);
 
 	if (format)
