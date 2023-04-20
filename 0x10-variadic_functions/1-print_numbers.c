@@ -5,7 +5,7 @@
  * print_numbers - Print numbers, followed by a new line
  * @separator: first input
  * @n: second input
- * 
+ * @...: Unknown arguments
  * Return: Always (Sucess).
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
