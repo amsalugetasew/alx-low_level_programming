@@ -3,7 +3,7 @@
 #include "3-calc.h"
 /**
  * main - check the code
- * @aergc: first parm
+ * @argc: first parm
  * @argv: second parm
  * Return: Always 0.
  */
