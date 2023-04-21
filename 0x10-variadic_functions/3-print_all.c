@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_numbers - Print numbers, followed by a new line
- * @separator: first input
- * @n: second input
+ * print_all - Print Everything, followed by a new line
+ * @: first input
+ * @format: second input
  * @...: unkwon parameter
  * Return: Always (Sucess).
  */
