@@ -5,7 +5,6 @@
 /**
  * free_list -  frees a list
  * @head: first input
- *
  * Return: Always(sucess)
  */
 void free_list(list_t *head)
