@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * first_fun - Returns sentence 
+ * first_fun - Returns sentence
  * @void: void parameter
  * Return: Always (0)
  */
