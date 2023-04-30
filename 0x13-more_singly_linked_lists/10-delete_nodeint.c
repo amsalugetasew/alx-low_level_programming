@@ -3,10 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *insert_nodeint_at_index - inserts a new node at a given position and return it
+ * *delete_nodeint_at_index - inserts a new node at a given position and return it
  * @head: first input
  * @idx: second input
- * @n: third input
  * Return: Always(sucess)
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -39,4 +38,3 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	free(temp);
 	return (1);
 }
-
