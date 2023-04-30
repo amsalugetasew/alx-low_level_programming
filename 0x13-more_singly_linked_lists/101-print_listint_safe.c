@@ -9,7 +9,7 @@ size_t print_listint_safe(const listint_t *head);
  */
 size_t looped_listint_len(const listint_t *head)
 {
-	const listint_t *rotsize, *l;
+	const listint_t *rotesize, *l;
 	size_t node = 1;
 
 	if (head == NULL || head->next == NULL)
@@ -26,10 +26,10 @@ size_t looped_listint_len(const listint_t *head)
 			while (rotesize != l)
 			{
 				node++;
-				rotsize = rotsize->next;
+				rotesize = rotesize->next;
 				l = l->next;
 			}
-			rotsize = rotesize->next;
+			rotesize = rotesize->next;
 			while (rotesize != l)
 			{
 				node++;
@@ -53,9 +53,9 @@ size_t print_listint_safe(const listint_t *head)
 
 	node = looped_listint_len(head);
 
-	if (n == 0)
+	if (node == 0)
 	{
-		for (; head != NULL; node)
+		for (; head != NULL; node++)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
 			head = head->next;
