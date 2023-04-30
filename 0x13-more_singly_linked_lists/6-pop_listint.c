@@ -13,7 +13,7 @@ int pop_listint(listint_t **head)
 	int number;
 
 	temp = malloc(sizeof(listint_t));
-	if (!(*head) || !head)
+	if (!head)
 	{
 		return (0);
 	}
