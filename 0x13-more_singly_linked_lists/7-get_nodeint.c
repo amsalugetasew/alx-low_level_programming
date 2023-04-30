@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *add_node_end - adds a new node at the end of a list and return it
+ * *get_nodeint_at_index - returns the nth node of a linked list
  * @head: first input
- * @str: second input
+ * @index: second input
  * Return: Always(sucess)
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
