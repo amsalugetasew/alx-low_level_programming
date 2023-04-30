@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *insert_nodeint_at_index - inserts a new node at a given position and return it
+ * *insert_nodeint_at_index - inserts a new node at a given position
  * @head: first input
  * @idx: second input
  * @n: third input
