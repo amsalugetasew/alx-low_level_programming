@@ -5,7 +5,7 @@
 /**
  * *delete_nodeint_at_index - inserts a new node at a given position and return it
  * @head: first input
- * @idx: second input
+ * @index: second input
  * Return: Always(sucess)
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
