@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * delete_nodeint_at_index - inserts a new node at a given position and return it
+ * delete_nodeint_at_index - inserts a new node at a given position
  * @head: first input
  * @index: second input
  * Return: Always(sucess)
