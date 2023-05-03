@@ -16,6 +16,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (!temp1)
 	{
+		free(temp1);
 		return (-1);
 	}
 	if (index == 0)
