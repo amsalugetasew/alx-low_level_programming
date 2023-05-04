@@ -1,5 +1,6 @@
 #include<stdio.h>
-void _putchar()
+
+void _putchar(char c)
 {
-printf("woychar");
+	putchar(c);
 }

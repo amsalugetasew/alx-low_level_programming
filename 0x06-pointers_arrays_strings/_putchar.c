@@ -1,5 +1,11 @@
-#include<stdio.h>
-void _putchar(int x)
+#include <stdio.h>
+
+/* _puchar function defination
+ *
+ */
+
+int _putchar (char ch)
 {
-printf("%d\n",x);
+	putchar(ch);
+	return (0);
 }
