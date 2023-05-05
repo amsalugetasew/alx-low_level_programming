@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 /**
  * print_binary -  prints the binary representation of a number
@@ -8,20 +9,23 @@
  */
 void print_binary(unsigned long int n)
 {
-	int binaryNum[32];
-	int i = 0, j;
-
-	if (n == 0)
+	int i, c = 0;
+	unsigned long int state;
+	for (i = 63; i >= 0; i--)
 	{
-		printf("%d", 0);
+		state = n >> i;
+		if (state & 1)
+		{
+			putchar('1');
+			c++;
+		}
+		else if (c)
+		{
+			putchar('0');
+		}
 	}
-	while (n > 0)
-
+	if (!c)
 	{
-		binaryNum[i] = n % 2;
-		n = n / 2;
-		i++;
+		putchar('0');
 	}
-	for (j = i - 1; j >= 0; j--)
-		printf("%d", binaryNum[j]);
 }
