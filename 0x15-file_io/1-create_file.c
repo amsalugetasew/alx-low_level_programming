@@ -9,8 +9,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int c;
-	ssize_t file, a;
+	int c = 0, file, a;
 
 	if (filename == NULL)
 	{
@@ -23,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 			c++;
 		}
 	}
-	file = open(filename, O_CREAT | O_RDONLY | O_TRUNC, 0600);
+	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	a = write(file, text_content, c);
 	if (file == -1 || a == -1)
 	{
