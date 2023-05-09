@@ -1,8 +1,9 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
 char *my_buffer(char *file);
-void closing_my_file(int f)
+void closing_my_file(int f);
 /**
  * *my_buffer - create buffer
  * @file: file
@@ -15,7 +16,7 @@ char *my_buffer(char *file)
 	b = malloc(sizeof(char) * 1024);
 	if (b == NULL)
 	{
-		printf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 		exit(99);
 	}
 	return (b);
@@ -32,7 +33,7 @@ void closing_my_file(int f)
 	i = close(f);
 	if (i == -1)
 	{
-		printf(STDERR_FILENO, "Error: Can't close fd FD_VALUE%s\n", f);
+		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE%d\n", f);
 		exit(100);
 	}
 }
@@ -49,7 +50,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	bf = my_buffer(argv[2]);
@@ -59,14 +60,14 @@ int main(int argc, char *argv[])
 	do {
 		if (f == -1)
 		{
-			printf(STDERR_FILENO, "Error: Can't read from file%s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file%s\n", argv[1]);
 			free(bf);
 			exit(98);
 		}
 		b = write(t, bf, a);
 		if (t == -1 || b == -1)
 		{
-			printf(STDERR_FILENO, "Error: Can't write to%s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to%s\n", argv[2]);
 			free(bf);
 			exit(99);
 		}
